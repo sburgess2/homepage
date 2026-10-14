@@ -1,0 +1,72 @@
+body {
+    background-color: #1b2422;
+    font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    color: #ddd69e;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    margin-bottom: 24px;
+}
+
+.logo {
+    height: 60px;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    color: white;
+}
+
+.orchid-header {
+    background-image: url("images/GreenhoodOrchid.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    padding: 48px;
+}
+
+.orchid-box {
+    background-color: rgba(27, 36, 34, 0.5);
+    border-radius: 16px;
+    padding: 24px 32px;
+    max-width: 600px;
+    margin-left: 48px;
+}
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    height: 300px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+

@@ -7,14 +7,17 @@ const spans = heading
     .selectAll("span")
     .data(phrases)
     .join("span")
-    .style("display", "block")
+    .style("display", "inline-block")
+    .style("margin-right", "24px")
     .style("opacity", 0)
     .text(d => d);
 
-const step = 1000;
-const fade = 600;
-const hold = 2000;
-const pause = 600;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const step = 2000;
+const fade = 1200;
+const hold = 3000;
+const pause = 2000;
 
 function cycle() {
     spans
@@ -30,5 +33,9 @@ function cycle() {
         .style("opacity", 0);
 }
 
-cycle();
-d3.interval(cycle, phrases.length * step + hold + fade + pause);
+if (reducedMotion) {
+    spans.style("opacity", 1);
+} else {
+    cycle();
+    d3.interval(cycle, phrases.length * step + hold + fade + pause);
+}

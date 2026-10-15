@@ -12,13 +12,13 @@ p {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 54px;
     color: white;
     text-align: center;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 54px;
     color: white;
     text-align: center;
 }
@@ -43,6 +43,7 @@ nav {
 
 nav a {
     color: white;
+    font-size: 20px;
 }
 
 .orchid-header {

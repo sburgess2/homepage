@@ -1,6 +1,7 @@
 body {
     background-color: #1b2422;
     font-family: "Nunito", sans-serif;
+    font-size: 18px;
 }
 
 h1, h2, h3 {
@@ -8,7 +9,7 @@ h1, h2, h3 {
 }
 
 p {
-    color: #ddd69e;
+    color: #f2efe6;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 16px;
@@ -18,7 +19,7 @@ h1 {
     font-size: 44px;
     line-height: 1.2;
     color: white;
-    text-align: center;
+    text-align: left;
     margin-bottom: 16px;
 }
 
@@ -30,16 +31,22 @@ h1 {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.4;
-    min-height: 120px;
-    color: white;
-    text-align: center;
+    min-height: 28px;
+    color: #D8DDD9;
+    text-align: left;
     margin-bottom: 16px;
 }
 
+.buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
 .button {
-    display: inline-block;
     background-color: #ddd69e;
     color: #1b2422;
     font-size: 18px;
@@ -50,6 +57,24 @@ h3 {
 
 .button:hover {
     background-color: white;
+}
+
+.connect {
+    margin-bottom: 8px;
+}
+
+.social {
+    display: flex;
+    gap: 24px;
+}
+
+.social a {
+    color: #ddd69e;
+    font-size: 32px;
+}
+
+.social a:hover {
+    color: white;
 }
 
 header {
@@ -73,6 +98,7 @@ nav {
 nav a {
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .orchid-header {
@@ -84,10 +110,10 @@ nav a {
 }
 
 .orchid-box {
-    background-color: rgba(27, 36, 34, 0.75);
+    background-color: rgba(27, 36, 34, 0.85);
     border-radius: 16px;
     padding: 24px 32px;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: 48px;
 }
 

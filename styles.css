@@ -130,11 +130,17 @@ nav a:hover {
 }
 
 .orchid-box {
-    background-color: rgba(27, 36, 34, 0.85);
+    background-color: rgba(27, 36, 34, 0.75);
     border-radius: 16px;
     padding: 24px 32px;
-    max-width: 800px;
-    margin-left: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.orchid-box .buttons,
+.orchid-box .social {
+    justify-content: left;
 }
 
 .chart {
